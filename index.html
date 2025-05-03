@@ -2,66 +2,210 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>French History Timeline</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #0055a4, #ef4135);
+      color: white;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 10px;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #ccc;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    .container {
+      padding: 20px 30px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+
+    .container.left {
+      left: 0;
+    }
+
+    .container.right {
+      left: 50%;
+    }
+
+    .content {
+      padding: 20px 25px;
+      background: white;
+      position: relative;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .container:hover .content {
+      transform: scale(1.03);
+    }
+
+    .container::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -10px;
+      background-color: white;
+      border: 4px solid #ef4135;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .right::after {
+      left: -10px;
+    }
+
+    h2 {
+      color: #0055a4;
+      font-family: 'Playfair Display', serif;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #333;
+      color: white;
+      font-size: 0.9em;
+    }
+
+    @media screen and (max-width: 768px) {
+      .timeline::after {
+        left: 31px;
+      }
+
+      .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+      .container.right {
+        left: 0%;
+      }
+
+      .container::after {
+        left: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Moments That Shaped France</h1>
-    <p>A journey through key historical events in French history</p>
+    <h1>French History Timeline</h1>
+    <p>Explore major events in French history</p>
   </header>
 
-  <main class="timeline">
+  <section class="timeline">
+    <div class="container left">
+      <div class="content">
+        <h2>52 BC - Battle of Alesia</h2>
+        <p>Julius Caesar defeats Vercingetorix, marking the Roman conquest of Gaul. The battle showed Roman engineering and siege mastery.</p>
+      </div>
+    </div>
 
-    <section class="event">
-      <h2>52 BC – The Conquest of Gaul & Battle of Alesia</h2>
-      <p>Julius Caesar led Roman forces to defeat Vercingetorix and the Gauls at the Battle of Alesia. This marked the beginning of Roman control over France.</p>
-    </section>
+    <div class="container right">
+      <div class="content">
+        <h2>1337-1453 - Hundred Years' War & Joan of Arc</h2>
+        <p>A long war between France and England. Joan of Arc emerged as a national heroine, claiming divine guidance to lead France to victory.</p>
+      </div>
+    </div>
 
-    <section class="event">
-      <h2>1429 – The 100 Years’ War & Joan of Arc</h2>
-      <p>Joan of Arc, a peasant girl, claimed divine guidance and led France to key victories, inspiring resistance against English rule during the Hundred Years' War.</p>
-    </section>
+    <div class="container left">
+      <div class="content">
+        <h2>16th Century - Renaissance & Humanism</h2>
+        <p>The French Renaissance brought art, literature, and science. Humanism emphasized individual potential and classical learning.</p>
+      </div>
+    </div>
 
-    <section class="event">
-      <h2>16th Century – The Renaissance & Humanism</h2>
-      <p>Humanism and art flourished during the French Renaissance. Thinkers like Montaigne and artists like Clouet helped shape cultural life in France.</p>
-    </section>
+    <div class="container right">
+      <div class="content">
+        <h2>1643-1715 - Louis XIV</h2>
+        <p>Known as the Sun King, Louis XIV centralized power and built the Palace of Versailles, symbolizing absolute monarchy.</p>
+      </div>
+    </div>
 
-    <section class="event">
-      <h2>1643–1715 – Louis XIV, The Sun King</h2>
-      <p>Louis XIV built the Palace of Versailles and centralized power in the monarchy, defining the image of absolute royal authority in Europe.</p>
-    </section>
+    <div class="container left">
+      <div class="content">
+        <h2>1815 - Napoleon & Battle of Waterloo</h2>
+        <p>Napoleon's final defeat by the Seventh Coalition ended his rule and reshaped Europe's political map.</p>
+      </div>
+    </div>
 
-    <section class="event">
-      <h2>1815 – Napoleon & The Battle of Waterloo</h2>
-      <p>Napoleon's final defeat at Waterloo ended his reign and led to his exile. It marked a turning point in European power dynamics.</p>
-    </section>
+    <div class="container right">
+      <div class="content">
+        <h2>19th-20th Century - Colonisation & Decolonisation</h2>
+        <p>France established a vast empire in Africa and Asia. Post-WW2 movements led to independence and the end of colonial rule.</p>
+      </div>
+    </div>
 
-    <section class="event">
-      <h2>1880s–1960s – French Colonisation & Decolonisation</h2>
-      <p>France built a vast overseas empire in Africa and Asia. The 20th century saw a wave of independence movements across the colonies.</p>
-    </section>
+    <div class="container left">
+      <div class="content">
+        <h2>1914-1918 - World War I</h2>
+        <p>France fought on the Western Front in brutal trench warfare. The war left deep social and economic scars.</p>
+      </div>
+    </div>
 
-    <section class="event">
-      <h2>1914–1918 – France During World War I</h2>
-      <p>France was a major battlefield of WWI. The war caused massive destruction and loss, especially at battles like Verdun and the Somme.</p>
-    </section>
+    <div class="container right">
+      <div class="content">
+        <h2>1939-1945 - World War II</h2>
+        <p>Occupied by Nazi Germany, France saw resistance movements rise. The country was liberated in 1944.</p>
+      </div>
+    </div>
 
-    <section class="event">
-      <h2>1939–1945 – France During World War II</h2>
-      <p>France fell to Nazi Germany in 1940 but resisted through the Free French Forces and the Resistance. It was liberated in 1944.</p>
-    </section>
-
-    <section class="event">
-      <h2>May 1968 – Student Revolts</h2>
-      <p>A series of protests by students and workers shook French society, demanding reforms in education, rights, and democracy.</p>
-    </section>
-
-  </main>
+    <div class="container left">
+      <div class="content">
+        <h2>May 1968 - Student Revolts</h2>
+        <p>A cultural and political movement driven by students and workers. It led to major changes in society, education, and labor laws.</p>
+      </div>
+    </div>
+  </section>
 
   <footer>
+    <p>Made with ❤️ for French class</p>
+  </footer>
+</body>
+</html>
+
     <p>Created for French Class | Powered by GitHub Pages</p>
   </footer>
 </body>
