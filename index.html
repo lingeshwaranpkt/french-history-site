@@ -1,109 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>French History Events</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    /* Add basic styles for the page */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #388e3c;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-    }
-    h1 {
-      margin: 0;
-    }
-    .events-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      padding: 20px;
-    }
-    .event-card {
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-    .event-card:hover {
-      transform: translateY(-10px);
-    }
-    .event-card img {
-      width: 100%;
-      max-height: 250px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    .event-card h2 {
-      margin: 20px 0;
-      font-size: 1.5em;
-    }
-    footer {
-      text-align: center;
-      padding: 10px 0;
-      background-color: #388e3c;
-      color: white;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French History - Interactive Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> <!-- For popups -->
 </head>
 <body>
 
-  <header>
-    <h1>French History Events</h1>
-  </header>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#alesia">The Battle of Alesia</a></li>
+            <li><a href="#hundred-years-war">The Hundred Years' War</a></li>
+            <li><a href="#renaissance">The Renaissance</a></li>
+            <li><a href="#louis-xiv">Louis XIV</a></li>
+            <li><a href="#napoleon">Napoleon & Waterloo</a></li>
+            <li><a href="#colonisation">French Colonisation</a></li>
+            <li><a href="#ww1">France During WW1</a></li>
+            <li><a href="#ww2">France During WW2</a></li>
+            <li><a href="#may-1968">May 1968 Revolts</a></li>
+        </ul>
+    </nav>
 
-  <div class="events-container">
-    <!-- Battle of Alesia -->
-    <div class="event-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Alésia_Caesar.jpg" alt="Battle of Alesia">
-      <h2><a href="battle-of-alesia.html" style="color: #388e3c; text-decoration: none;">The Battle of Alesia</a></h2>
-    </div>
+    <!-- Section for each event -->
+    <section id="alesia" class="event-section">
+        <h2>The Battle of Alesia</h2>
+        <p>A detailed explanation about the Battle of Alesia.</p>
+        <button onclick="showDetail('alesia')">Learn More</button>
+    </section>
 
-    <!-- Hundred Years War -->
-    <div class="event-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Battle_of_Agincourt_1415.jpg" alt="Hundred Years War">
-      <h2><a href="hundred-years-war.html" style="color: #388e3c; text-decoration: none;">The Hundred Years' War</a></h2>
-    </div>
+    <section id="hundred-years-war" class="event-section">
+        <h2>The Hundred Years' War</h2>
+        <p>Explaining the Hundred Years' War.</p>
+        <button onclick="showDetail('hundred-years-war')">Learn More</button>
+    </section>
 
-    <!-- French Revolution -->
-    <div class="event-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Storming_of_the_Bastille.jpg" alt="French Revolution">
-      <h2><a href="french-revolution.html" style="color: #388e3c; text-decoration: none;">The French Revolution</a></h2>
-    </div>
-
-    <!-- Napoleon's Rise and Fall -->
-    <div class="event-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Napoleon_Bonaparte%2C_Emperor_of_the_French%2C_Emperor_portrait.jpg" alt="Napoleon Bonaparte">
-      <h2><a href="napoleon-rise-fall.html" style="color: #388e3c; text-decoration: none;">Napoleon Bonaparte's Rise and Fall</a></h2>
-    </div>
-
-    <!-- France During World War II -->
-    <div class="event-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/French_Surrender_1940.jpg" alt="France During World War II">
-      <h2><a href="france-ww2.html" style="color: #388e3c; text-decoration: none;">France During World War II</a></h2>
-    </div>
-
-    <!-- May 1968 Revolts -->
-    <div class="event-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/May_68_May_68_Paris_01.jpg" alt="May 1968 Revolts">
-      <h2><a href="may-revolts.html" style="color: #388e3c; text-decoration: none;">The Students Revolts of May 1968</a></h2>
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2025 French History Project. All Rights Reserved.
-  </footer>
-
+    <!-- More sections here for other events -->
+    
+    <script src="script.js"></script>
 </body>
 </html>
+
