@@ -3,148 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>French History Events</title>
+    <title>French History Timeline</title>
     <link rel="stylesheet" href="style.css">
     <script src="timeline.js" defer></script>
 </head>
 <body>
-
     <header>
-        <h1>Major Events in French History</h1>
+        <h1>French History Timeline</h1>
     </header>
 
-    <div class="timeline">
-        <!-- Event 1: Battle of Alesia -->
-        <div class="timeline-item" onclick="toggleDetails('alesia-details')">
-            <div class="timeline-date">58 BC</div>
-            <div class="timeline-content">
-                <h3>The Battle of Alesia</h3>
-                <p>Click to read more...</p>
+    <section class="timeline">
+        <div class="event" onclick="toggleDetails('alesia')">
+            <h2>The Conquest of Gaul by Julius Caesar & the Battle of Alesia</h2>
+            <div id="alesia" class="event-details">
+                <p>The Battle of Alesia was a decisive battle between Julius Caesar's Roman legions and the forces of Vercingetorix, the leader of the Gallic tribes.</p>
+                <img src="alesia-battle.jpg" alt="Battle of Alesia">
             </div>
         </div>
-        <div id="alesia-details" class="event-details">
-            <h3>Detailed Information on The Battle of Alesia</h3>
-            <img src="alesia-battle.jpg" alt="Battle of Alesia" class="event-image">
-            <p>This battle between Julius Caesar and Vercingetorix was a decisive moment in the Gallic Wars.</p>
-        </div>
 
-        <!-- Event 2: Hundred Years War -->
-        <div class="timeline-item" onclick="toggleDetails('hundred-years-details')">
-            <div class="timeline-date">1337 - 1453</div>
-            <div class="timeline-content">
-                <h3>The Hundred Years' War</h3>
-                <p>Click to read more...</p>
+        <div class="event" onclick="toggleDetails('hundredYearsWar')">
+            <h2>The Hundred Years War & Joan of Arc</h2>
+            <div id="hundredYearsWar" class="event-details">
+                <p>The Hundred Years War was a series of conflicts waged from 1337 to 1453 between the Kingdom of England and the Kingdom of France. Joan of Arc played a pivotal role in the French victory.</p>
+                <img src="hundred-years-war.jpg" alt="Hundred Years War">
             </div>
         </div>
-        <div id="hundred-years-details" class="event-details">
-            <h3>Detailed Information on The Hundred Years' War</h3>
-            <img src="hundred-years-war.jpg" alt="Hundred Years' War" class="event-image">
-            <p>The Hundred Years' War was a series of conflicts between England and France, lasting from 1337 to 1453.</p>
-        </div>
 
-        <!-- Event 3: The Renaissance and Humanism in France -->
-        <div class="timeline-item" onclick="toggleDetails('renaissance-details')">
-            <div class="timeline-date">16th Century</div>
-            <div class="timeline-content">
-                <h3>The Renaissance and Humanism</h3>
-                <p>Click to read more...</p>
+        <div class="event" onclick="toggleDetails('renaissance')">
+            <h2>The Renaissance & Humanism in France</h2>
+            <div id="renaissance" class="event-details">
+                <p>The Renaissance in France was a period of cultural, artistic, and intellectual rebirth that began in the 15th century. Humanism played a key role in shaping French thought and culture during this time.</p>
+                <img src="renaissance-humanism.jpg" alt="Renaissance Humanism">
             </div>
         </div>
-        <div id="renaissance-details" class="event-details">
-            <h3>Detailed Information on The Renaissance and Humanism</h3>
-            <img src="renaissance.jpg" alt="Renaissance" class="event-image">
-            <p>The Renaissance brought a flourishing of art, culture, and humanism, significantly influencing French society in the 16th century.</p>
-        </div>
 
-        <!-- Event 4: Louis XIV -->
-        <div class="timeline-item" onclick="toggleDetails('louis-xiv-details')">
-            <div class="timeline-date">1643 - 1715</div>
-            <div class="timeline-content">
-                <h3>Louis XIV</h3>
-                <p>Click to read more...</p>
+        <div class="event" onclick="toggleDetails('louisXIV')">
+            <h2>Louis XIV, The Sun King</h2>
+            <div id="louisXIV" class="event-details">
+                <p>Louis XIV, also known as the Sun King, ruled France for over 70 years, establishing absolute monarchy and expanding France's influence in Europe.</p>
+                <img src="louis-xiv.jpg" alt="Louis XIV">
             </div>
         </div>
-        <div id="louis-xiv-details" class="event-details">
-            <h3>Detailed Information on Louis XIV</h3>
-            <img src="louis-xiv.jpg" alt="Louis XIV" class="event-image">
-            <p>Louis XIV, also known as the Sun King, ruled France for over 70 years and is considered one of the most powerful monarchs in history.</p>
-        </div>
 
-        <!-- Event 5: Napoleon and the Battle of Waterloo -->
-        <div class="timeline-item" onclick="toggleDetails('napoleon-details')">
-            <div class="timeline-date">1815</div>
-            <div class="timeline-content">
-                <h3>Napoleon and the Battle of Waterloo</h3>
-                <p>Click to read more...</p>
+        <div class="event" onclick="toggleDetails('napoleon')">
+            <h2>Napoleon and the Battle of Waterloo</h2>
+            <div id="napoleon" class="event-details">
+                <p>Napoleon Bonaparte was a military leader and emperor who led France in a series of military campaigns. The Battle of Waterloo in 1815 marked his final defeat.</p>
+                <img src="napoleon-waterloo.jpg" alt="Napoleon at Waterloo">
             </div>
         </div>
-        <div id="napoleon-details" class="event-details">
-            <h3>Detailed Information on Napoleon and the Battle of Waterloo</h3>
-            <img src="napoleon.jpg" alt="Napoleon and Battle of Waterloo" class="event-image">
-            <p>Napoleon's defeat at the Battle of Waterloo marked the end of his reign and the Napoleonic Wars.</p>
-        </div>
 
-        <!-- Event 6: French Colonisation and Decolonisation -->
-        <div class="timeline-item" onclick="toggleDetails('colonisation-details')">
-            <div class="timeline-date">19th Century - Mid 20th Century</div>
-            <div class="timeline-content">
-                <h3>French Colonisation and Decolonisation</h3>
-                <p>Click to read more...</p>
+        <div class="event" onclick="toggleDetails('colonisation')">
+            <h2>French Colonisation and Decolonisation</h2>
+            <div id="colonisation" class="event-details">
+                <p>French colonisation involved establishing overseas colonies across the globe, while decolonisation in the 20th century saw the independence of many former colonies.</p>
+                <img src="colonisation-decolonisation.jpg" alt="French Colonisation">
             </div>
         </div>
-        <div id="colonisation-details" class="event-details">
-            <h3>Detailed Information on French Colonisation and Decolonisation</h3>
-            <img src="colonisation.jpg" alt="French Colonisation" class="event-image">
-            <p>France was a major colonial power, but decolonisation movements during the 20th century led to the independence of many French colonies.</p>
-        </div>
 
-        <!-- Event 7: France During WW1 -->
-        <div class="timeline-item" onclick="toggleDetails('ww1-details')">
-            <div class="timeline-date">1914 - 1918</div>
-            <div class="timeline-content">
-                <h3>France During WW1</h3>
-                <p>Click to read more...</p>
+        <div class="event" onclick="toggleDetails('ww1')">
+            <h2>France During World War 1</h2>
+            <div id="ww1" class="event-details">
+                <p>World War 1 was a devastating conflict that lasted from 1914 to 1918, and France played a major role in the Allied victory.</p>
+                <img src="ww1-france.jpg" alt="France in WW1">
             </div>
         </div>
-        <div id="ww1-details" class="event-details">
-            <h3>Detailed Information on France During WW1</h3>
-            <img src="ww1.jpg" alt="France in WW1" class="event-image">
-            <p>World War I saw devastating losses for France, with significant battles like the Battle of Verdun and widespread destruction.</p>
-        </div>
 
-        <!-- Event 8: France During WW2 -->
-        <div class="timeline-item" onclick="toggleDetails('ww2-details')">
-            <div class="timeline-date">1939 - 1945</div>
-            <div class="timeline-content">
-                <h3>France During WW2</h3>
-                <p>Click to read more...</p>
+        <div class="event" onclick="toggleDetails('ww2')">
+            <h2>France During World War 2</h2>
+            <div id="ww2" class="event-details">
+                <p>During World War 2, France was invaded by Nazi Germany, leading to the occupation of the country and the formation of the Vichy regime.</p>
+                <img src="ww2-france.jpg" alt="France in WW2">
             </div>
         </div>
-        <div id="ww2-details" class="event-details">
-            <h3>Detailed Information on France During WW2</h3>
-            <img src="ww2.jpg" alt="France in WW2" class="event-image">
-            <p>During World War II, France was occupied by Nazi Germany and saw major resistance movements, including the French Resistance.</p>
-        </div>
 
-        <!-- Event 9: The Student Revolts of May 1968 -->
-        <div class="timeline-item" onclick="toggleDetails('may1968-details')">
-            <div class="timeline-date">May 1968</div>
-            <div class="timeline-content">
-                <h3>The Student Revolts of May 1968</h3>
-                <p>Click to read more...</p>
+        <div class="event" onclick="toggleDetails('may1968')">
+            <h2>The Student Revolts of May 1968</h2>
+            <div id="may1968" class="event-details">
+                <p>In May 1968, a series of student protests and strikes spread across France, leading to social and political changes throughout the country.</p>
+                <img src="may-1968.jpg" alt="May 1968 Revolts">
             </div>
         </div>
-        <div id="may1968-details" class="event-details">
-            <h3>Detailed Information on The Student Revolts of May 1968</h3>
-            <img src="may1968.jpg" alt="May 1968 Revolts" class="event-image">
-            <p>May 1968 was a month of massive protests, strikes, and student movements that nearly brought France to a standstill.</p>
-        </div>
+    </section>
 
-    </div>
-
+    <footer>
+        <p>&copy; 2025 French History Project</p>
+    </footer>
 </body>
 </html>
-
-</body>
-</html>
-
