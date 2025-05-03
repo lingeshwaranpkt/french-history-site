@@ -1,10 +1,11 @@
-// Function to toggle the visibility of event details
-function toggleDetails(eventId) {
-    const detailsElement = document.getElementById(eventId);
+// Smooth scroll for internal links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-    if (detailsElement.style.display === "block") {
-        detailsElement.style.display = "none";
-    } else {
-        detailsElement.style.display = "block";
-    }
-}
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
