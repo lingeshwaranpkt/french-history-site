@@ -3,44 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>French History - Interactive Events</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>French History - A Journey Through Time</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> <!-- For popups -->
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#alesia">The Battle of Alesia</a></li>
-            <li><a href="#hundred-years-war">The Hundred Years' War</a></li>
-            <li><a href="#renaissance">The Renaissance</a></li>
-            <li><a href="#louis-xiv">Louis XIV</a></li>
-            <li><a href="#napoleon">Napoleon & Waterloo</a></li>
-            <li><a href="#colonisation">French Colonisation</a></li>
-            <li><a href="#ww1">France During WW1</a></li>
-            <li><a href="#ww2">France During WW2</a></li>
-            <li><a href="#may-1968">May 1968 Revolts</a></li>
-        </ul>
-    </nav>
+    <header>
+        <h1>Welcome to French History</h1>
+        <p>Explore significant events from France's rich history</p>
+    </header>
 
-    <!-- Section for each event -->
-    <section id="alesia" class="event-section">
-        <h2>The Battle of Alesia</h2>
-        <p>A detailed explanation about the Battle of Alesia.</p>
-        <button onclick="showDetail('alesia')">Learn More</button>
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <h2>Historical Timeline</h2>
+        <div class="timeline-item">
+            <div class="timeline-date">58 BC</div>
+            <div class="timeline-content">
+                <h3>The Battle of Alesia</h3>
+                <p>The Battle of Alesia was a decisive confrontation between Julius Caesar's Roman forces and the Gallic tribes led by Vercingetorix. It took place in 52 BC and marked the final defeat of the Gauls, cementing Roman control over Gaul.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">1337-1453</div>
+            <div class="timeline-content">
+                <h3>The Hundred Years' War</h3>
+                <p>The Hundred Years' War was a series of conflicts fought between the Kingdom of England and the Kingdom of France. The war lasted from 1337 to 1453 and had a profound impact on the future of both nations.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">16th Century</div>
+            <div class="timeline-content">
+                <h3>The Renaissance and Humanism</h3>
+                <p>During the Renaissance, France experienced a cultural and intellectual movement that revived the ideas of classical antiquity, influencing art, literature, and science.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">1643-1715</div>
+            <div class="timeline-content">
+                <h3>Louis XIV - The Sun King</h3>
+                <p>Louis XIV ruled France for over 70 years and is known for his centralized absolute monarchy, expanding the influence of France across Europe and creating a lavish culture at Versailles.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">1815</div>
+            <div class="timeline-content">
+                <h3>Napoleon and the Battle of Waterloo</h3>
+                <p>The Battle of Waterloo in 1815 ended Napoleon Bonaparte's reign and marked the restoration of the monarchy in France.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">19th Century</div>
+            <div class="timeline-content">
+                <h3>French Colonisation and Decolonisation</h3>
+                <p>France's imperial expansion in the 19th century led to colonies in Africa and Asia. The process of decolonisation began after World War II, leading to the independence of many former colonies.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">1914-1918</div>
+            <div class="timeline-content">
+                <h3>France During WW1</h3>
+                <p>World War I devastated France, with significant loss of life, destruction, and socio-political changes, including the end of the monarchy and the establishment of the French Third Republic.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">1939-1945</div>
+            <div class="timeline-content">
+                <h3>France During WW2</h3>
+                <p>During WWII, France was occupied by Nazi Germany, and the French Resistance played a vital role in the liberation of the country. The war led to the fall of the Vichy regime and the rise of the Fourth Republic.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-date">1968</div>
+            <div class="timeline-content">
+                <h3>The Student Revolts of May 1968</h3>
+                <p>The May 1968 protests were a series of student and worker strikes in France that resulted in massive social change and cultural shifts, challenging traditional French societal norms.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="hundred-years-war" class="event-section">
-        <h2>The Hundred Years' War</h2>
-        <p>Explaining the Hundred Years' War.</p>
-        <button onclick="showDetail('hundred-years-war')">Learn More</button>
-    </section>
+    <footer>
+        <p>Created for French History Project - By [Your Name]</p>
+    </footer>
 
-    <!-- More sections here for other events -->
-    
-    <script src="script.js"></script>
 </body>
 </html>
 
