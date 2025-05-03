@@ -1,87 +1,61 @@
-/* General Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #fff;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
-/* Header Styling */
 header {
-    background-color: #0055A4; /* French Blue */
-    color: #fff;
+    background-color: #0055A4;
+    color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
 }
 
-/* Title Styling */
 h1 {
     margin: 0;
-    font-size: 3em;
-    letter-spacing: 2px;
 }
 
-/* Timeline Styles */
 .timeline {
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #F0F0F0;
 }
 
-.timeline-item {
-    background-color: #fff;
-    border-left: 5px solid #0055A4; /* French Blue border */
-    margin: 20px 0;
-    padding: 20px;
-    transition: all 0.3s ease;
+.event {
+    background-color: #FFFFFF;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.timeline-item:hover {
-    background-color: #f0f0f0;
+.event:hover {
+    background-color: #E0E0E0;
 }
 
-/* Event Dates */
-.timeline-date {
-    font-size: 1.2em;
-    color: #bf0a30; /* French Red */
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-/* Event Content */
-.timeline-content h3 {
-    color: #0055A4; /* French Blue */
-}
-
-.timeline-content p {
-    color: #333;
-}
-
-/* Event Details (Initially Hidden) */
 .event-details {
     display: none;
-    background-color: #f9f9f9;
-    border-left: 5px solid #0055A4;
-    margin: 10px 0 30px;
-    padding: 20px;
+    padding-top: 10px;
 }
 
-.event-details h3 {
-    font-size: 1.5em;
-    color: #0055A4;
-}
-
-/* Event Images */
-.event-image {
+img {
     width: 100%;
     max-width: 600px;
-    margin-top: 20px;
+    height: auto;
+    margin-top: 10px;
 }
 
-/* Timeline Interactivity */
-.timeline-item.active .event-details {
-    display: block;
+footer {
+    text-align: center;
+    background-color: #0055A4;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
