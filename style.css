@@ -72,3 +72,14 @@ footer {
     width: 100%;
 }
 
+
+
+.event-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
